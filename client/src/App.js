@@ -15,7 +15,8 @@ import Login from './pages/Login';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-let URI ="http://localhost:3001/graphql"
+let URI = process.env.REACT_APP_GRAPHQL_ENDPOINT || "http://localhost:3001/graphql"; console.log("URI", URI)
+//let URI ="http://localhost:3001/graphql"
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
