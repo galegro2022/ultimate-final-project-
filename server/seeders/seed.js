@@ -5,6 +5,7 @@ const comicSeeds = require('./comicSeeds.json');
 const { Offer } = require('../models');
 const offerSeeds = require('./offerSeeds.json');
 
+console.log("process.env.Mongo", process.env.MONGODB_URI)
 
 db.once('open', async () => {
   try {
